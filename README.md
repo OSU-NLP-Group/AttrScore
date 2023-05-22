@@ -50,7 +50,7 @@ Claim (a concatenation of Query + Answer), and a Reference. For example,
 >Reference: Elon Musk is the CEO of Twitter. Musk took over as CEO in October 2022 following a back-and-forth affair in which the billionaire proposed to purchase the social media company for $44 billion, tried to back out, and then ultimately went through with the acquisition. After becoming CEO, former CEO Parag Agrawal, CFO Ned Segal, and legal affairs and policy chief Vijaya Gadde were all dismissed from the company.
 
 <div align="center">
-  <img src="img.png" alt="Prompting ChatGPT to evaluate the attribution">
+  <img src="img.png" alt="Prompting ChatGPT to evaluate the attribution" style="width: 50%;">
   <p><em>Figure 1: Prompting ChatGPT to evaluate the attribution</em></p>
 </div>
 
