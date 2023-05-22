@@ -57,7 +57,7 @@ Claim (a concatenation of Query + Answer), and a Reference. For example,
 
 ### Fine-tune LMs as AttributionScore
 You can fine-tune any LMs on our repurposed datasets to evaluate the attribution. 
-You could also load our fine-tuned models to evaluate. For example,
+You could also load our fine-tuned models https://huggingface.co/osunlp/attrscore-flan-t5-large to evaluate. For example,
 
 ```python
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
