@@ -133,7 +133,6 @@ class SupervisedDataset(Dataset):
 
     def process_function(self, example):
 
-        # label_name = 'explanation' if 'explanation' in example else 'label'
         label_name = 'label'
 
         if self.input_has_query:
@@ -209,10 +208,9 @@ class DataCollatorForSupervisedDataset(object):
 def make_supervised_data_module(tokenizer: transformers.PreTrainedTokenizer, data_args) -> Dict:
     """Make dataset and collator for supervised fine-tuning."""
     train_dataset = SupervisedDataset(tokenizer=tokenizer, data_args=data_args, split='train')
-    eval_dataset = SupervisedDataset(tokenizer=tokenizer, data_args=data_args, split='test')
 
     data_collator = DataCollatorForSupervisedDataset(tokenizer=tokenizer)
-    return dict(train_dataset=train_dataset, eval_dataset=eval_dataset, data_collator=data_collator)
+    return dict(train_dataset=train_dataset, data_collator=data_collator)
 
 
 

@@ -95,7 +95,6 @@ torchrun --nproc_per_node 4 train_alpaca.py \
   --model_name_or_path chavinlo/alpaca-13b \
   --data_path osunlp/AttrScore \
   --train_subset 'combined_train' \
-  --test_subset 'attreval_gensearch' \
   --input_has_query True \
   --num_train_samples -1 \
   --bf16 True \
