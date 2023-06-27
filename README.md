@@ -12,7 +12,7 @@ Please kindly cite the paper if you use the code or any resources in this repo:
 }
 ```
 
-![img.png](img.png)
+![img.png](AttrScore.png)
 
 ## What's New?
 **June 26, 2023**: We update the results of different models on this task. We do quality check and correct some wrong annotated labels in the AttrEval-GenSearch dataset.
