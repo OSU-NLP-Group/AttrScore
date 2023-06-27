@@ -1,0 +1,52 @@
+[
+  {
+    "task_name": "attribution-no-definition",
+    "prompt_template": "Verify whether a given reference can support the claim. Options: Attributable, Extrapolatory or Contradictory.",
+    "input_template": "Claim: {}\n\nReference: {}\n",
+    "label_map": {
+      "Attributable": "Attributable",
+      "Extrapolatory": "Extrapolatory",
+      "Contradictory": "Contradictory"
+    }
+  },
+  {
+    "task_name": "attribution-with-definition",
+    "prompt_template": "Verify whether a given reference can support the claim. Options: Attributable, Extrapolatory or Contradictory. Attributable means the reference fully supports the claim, Extrapolatory means the reference lacks sufficient information to validate the claim, and Contradictory means the claim contradicts the information presented in the reference.",
+    "input_template": "Claim: {}\n\nReference: {}\n",
+    "label_map": {
+      "Attributable": "Attributable",
+      "Extrapolatory": "Extrapolatory",
+      "Contradictory": "Contradictory"
+    }
+  },
+  {
+    "task_name": "fact-checking",
+    "prompt_template": "Fact-check a claim based on the given evidence. Options: Supported, Refuted or Not Enough Information.",
+    "input_template": "Claim: {}\n\nEvidence: {}\n",
+    "label_map": {
+      "Supported": "Attributable",
+      "Not Enough Information": "Extrapolatory",
+      "Refuted": "Contradictory"
+    }
+  },
+  {
+    "task_name": "nli",
+    "prompt_template": "Read the following and determine if the hypothesis can be inferred from the premise. Options: Entailment, Contradiction, or Neutral.",
+    "input_template": "Hypothesis: {}\n\nPremise: {}\n",
+    "label_map": {
+      "Entailment": "Attributable",
+      "Neutral": "Extrapolatory",
+      "Contradiction": "Contradictory"
+    }
+  },
+  {
+    "task_name": "summarization",
+    "prompt_template": "Read the following and determine whether the source text can support the summary. Options: Support, Contradict, or Not Enough Information.",
+    "input_template": "Summary: {}\n\nSource: {}\n",
+    "label_map": {
+      "Support": "Attributable",
+      "Not Enough Information": "Extrapolatory",
+      "Contradict": "Contradictory"
+    }
+  }
+]

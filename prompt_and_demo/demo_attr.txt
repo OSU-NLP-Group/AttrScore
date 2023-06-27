@@ -1,0 +1,33 @@
+Here are some demonstration examples for you.
+
+### Input:
+Claim: In what year was the writer of the opera "Mazeppa" born? The writer of the opera "Mazeppa" was born in 1840.
+
+Reference: Mazeppa, properly Mazepa (Russian: Мазепа ), is an opera in three acts (six scenes) by Pyotr Ilyich Tchaikovsky.  The libretto was written by Victor Burenin and is based on Pushkin\'s poem "Poltava". Pyotr Ilyich Tchaikovsky ( ; Russian: Пётр Ильи́ч Чайко́вский ; 25 April/7 May 1840 – 25 October/6 November 1893), often anglicized as Peter Ilich Tchaikovsky, was a Russian composer of the romantic period, some of whose works are among the most popular music in the classical repertoire.  He was the first Russian composer whose music made a lasting impression internationally, bolstered by his appearances as a guest conductor in Europe and the United States.  Tchaikovsky was honored in 1884, by Emperor Alexander III, and awarded a lifetime pension.
+
+### Response:
+Attributable. From the given reference, Pyotr Ilyich Tchaikovsky was the writer of "Mazeppa", who was born in 1840 as stated in the given claim.
+
+-
+
+### Input:
+Claim: In what part of Buenos Aires Province is the city that has The Juan Carlos Castagnino Municipal Museum of Art located? It is located in the southeast part.
+
+Reference: The Juan Carlos Castagnino Municipal Museum of Art is a museum of fine arts in Mar del Plata, Argentina. Mar del Plata is an Argentine city in the east part of Buenos Aires Province located on the coast of the Atlantic Ocean.  It is the head of General Pueyrredón Partido.  Mar del Plata is the second largest city in Buenos Aires Province.  The name "Mar del Plata" has the meaning of "sea of the Silver region" or "adjoining sea to the (River) Silver region".  Mar del Plata is one of the major fishing ports and the biggest seaside beach resort in Argentina. 
+
+### Response:
+Contradictory. The reference says that Mar del Plata is in the east part of Buenos Aires, so The Juan Carlos Castagnino Municipal Museum of Art is also in the east part of Buenos Aires, not southeast.
+
+-
+
+### Input:
+Claim: In what year was Louis Joseph de Frances\'s mother born? Louis Joseph de Frances's mother was born in 1755.
+
+Reference: Lakshman Joseph de Saram is a film composer and classical musician.  Born in Colombo, Sri Lanka and educated at the Royal College, Colombo, the High School of Performing Arts, Manhattan School of Music and Juilliard Pre-College in New York City, Joseph de Saram is influential in the music of South Asian art cinema, having scored many international award-winning films like \'Between Two Worlds\' and \'Akasa Kusum.\'  His best-known score is to the 2012 film "Bel Ami".  Joseph de Saram is also artistic director of The Chamber Music Society of Colombo. Louis Joseph de Lorraine "Duke of Guise" and Duke of Angoulême, (7 August 1650 – 30 July 1671) was the only son of Louis, Duke of Joyeuse and Marie Françoise de Valois, the only daughter of Louis-Emmanuel d\'Angoulême, Count of Alès, Governor of Provence and son of Charles de Valois Duke of Angoulême, a bastard of Charles IX of France.
+
+### Response:
+Extrapolatory. The answer to the question cannot be inferred from the given reference since the person "Louis Joseph de Frances" is not mentioned. We also cannot find any evidence in the Reference which contradicts with the provided answer.
+
+-
+
+Now here is the examples that needs your response:
