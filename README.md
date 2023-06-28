@@ -1,37 +1,26 @@
 # AttrScore
 Code, datasets, models for the paper "[Automatic Evaluation of Attribution by Large Language Models](https://arxiv.org/pdf/2305.06311.pdf)"
 
-Please kindly cite the paper if you use the code or any resources in this repo:
-
-```bib
-@article{yue2023automatic,
-  title={Automatic Evaluation of Attribution by Large Language Models},
-  author={Yue, Xiang and Wang, Boshi and Zhang, Kai and Chen, Ziru and Su, Yu and Sun, Huan},
-  journal={arXiv preprint arXiv:2305.06311},
-  year={2023}
-}
-```
-
 ![img.png](AttrScore.png)
 
 ## What's New?
-**June 26, 2023**: We update the results of different models on this task. We do quality check and correct some wrong annotated labels in the AttrEval-GenSearch dataset.
-We release our training, evaluation script, and model checkpoints.
+**June 26, 2023**: 1) Evaluation results of more models including GPT-4. 2) Thorough re-examination of the AttrEval-GenSearch dataset and correcting some annotation issues. Updated dataset released.
+3) Training and evaluation code as well as model checkpoints released.
 
 
 ## Dataset
 
-We release our dataset (including both training and two evaluation set: AttrEval-Simulation and AttrEval-GenSearch)
+We release our dataset (including training and two evaluation sets: AttrEval-Simulation and AttrEval-GenSearch)
 at: [Huggingface datasets](https://huggingface.co/datasets/osunlp/AttrScore) (more details can be found on the dataset page)
 
 ```python
 #loading dataset
 from datasets import load_dataset
 
-#training
+# training
 attr_train = load_dataset("osunlp/AttrScore","combined_train")
 
-#test
+# test
 # attr_eval_simulation = load_dataset("osunlp/AttrScore", "attreval_simulation")
 attr_eval_gensearch = load_dataset("osunlp/AttrScore", "attreval_gensearch")
 ```
@@ -67,7 +56,7 @@ We show our results for both prompting LLMs and fine-tuning LLMs on repurposed d
 
 ### Prompt LLMs (zero/few-shot)
 
-We can prompt LLMs such as ChatGPT to evaluate the attribution. The input is the evaluation task prompt,
+We can prompt LLMs such as ChatGPT and GPT-4 to evaluate the attribution. The input is the evaluation task prompt,
 Claim (a concatenation of **Query + Answer**), and a Reference. For example,
 
 >Verify whether a given reference can support the claim. Options: Attributable, Extrapolatory or Contradictory. Attributable means the reference fully supports the claim, Extrapolatory means the reference lacks sufficient information to validate the claim, and Contradictory means the claim contradicts the information presented in the reference. 
@@ -144,6 +133,7 @@ outputs = model.generate(input_ids)
 output = tokenizer.decode(outputs[0], skip_special_tokens=True)
 print(output) #'Attributable'
 ```
+
 Or simply using the ```pipeline```
 ```python
 from transformers import pipeline
