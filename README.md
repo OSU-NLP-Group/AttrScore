@@ -160,9 +160,25 @@ Our annotated evaluation set, AttrEval-GenSearch, is derived from New Bing, whic
 Besides, the Attreval-Simulation dataset still has gaps from the real scenario. The error patterns in this simulated dataset might be overly simplistic and lack diversity, which can limit the models' ability to effectively handle more complex and varied real-world errors. It is also worth noting that this simulated dataset may contain noise and erroneous labels, which could further impede the models' learning and subsequent performance.
 How to obtain higher-quality training data for attribution evaluation at scale can be a major focus for future development.
 
+## Citation Information
+
+If you find this code or dataset useful, please consider citing our paper:
+
+```bib
+@article{yue2023automatic,
+  title={Automatic Evaluation of Attribution by Large Language Models},
+  author={Yue, Xiang and Wang, Boshi and Zhang, Kai and Chen, Ziru and Su, Yu and Sun, Huan},
+  journal={arXiv preprint arXiv:2305.06311},
+  year={2023}
+}
+```
+
+
 ### Contact
 Feel free to reach out if you have any questions.
 [Xiang Yue](mailto:yue.149@osu.edu),
 [Yu Su](mailto:su.809@osu.edu),
 [Huan Sun](mailto:sun.397@osu.edu)
+
+
 
